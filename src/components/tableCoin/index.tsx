@@ -127,7 +127,7 @@ export const TableCoin = () => {
         <tbody>
           {datatables.map((coin, i) =>
             <>
-              <tr key={i}>
+              <tr onClick={()=> window.open(`${coin.coinrankingUrl}`, "_blank")} key={i}>
                 <td>{coin.name}</td>
                 <td>{coin.symbol}</td>
                 <td>
